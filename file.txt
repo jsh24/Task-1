@@ -1,0 +1,16 @@
+use task\Task1 ;
+
+$t1 = new Task1('file.json , file2.json');
+
+$STRING = $t1->STRING()->get();
+$fileJSON = $t1->JSON_FILE()->get();
+$BOOLEAN = $t1->BOOLEAN()->get();
+// print_ar($fileJSON );
+
+print_ar($fileJSON );
+print_ar($STRING);
+print_ar($BOOLEAN);
+
+$t1 = new Task1('{"name":"Jonh Doe"}');
+$fJSON = $t1->JSON()->get();
+print_ar($fJSON );
